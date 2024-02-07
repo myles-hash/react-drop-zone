@@ -34,7 +34,6 @@ export default function Dropzone() {
   }
   //remove file function that uses name of a file as an argument. When called, updates file state to remove file with matching name
   
-
   //spread the properties from both in the return, in the outermost div and the input
   //div props mainly give eventhandlers for drag and drop behaviour
   //input spread gives us event listeners for click/drag events, needed for drag and drop/ clicking on files
@@ -46,12 +45,11 @@ export default function Dropzone() {
       {
         isDragActive ?
           <p>Drop the files here ...</p> :
-          <p>Drag 'n' drop some files here, or click to select files</p>
+          <p>Drag and drop some files here, or click to select files</p>
       }
     </div>
 
     <h4>Preview </h4>
-
       
     <ul>
   {files.length === 0 ? (
