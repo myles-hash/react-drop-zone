@@ -37,6 +37,7 @@ export default function Dropzone() {
   //spread the properties from both in the return, in the outermost div and the input
   //div props mainly give eventhandlers for drag and drop behaviour
   //input spread gives us event listeners for click/drag events, needed for drag and drop/ clicking on files
+  console.log(files)
   return (
     <>
     
